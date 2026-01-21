@@ -1,0 +1,129 @@
+/* 
+{
+if (typeof a === "undefined") {
+console.log( "cool" );
+}
+if (typeof b === "undefined") { // ReferenceError!
+// ..
+}
+// ..
+let b;
+} 
+*/
+
+//String.raw
+
+/* 
+function showraw(strings, ...values) {
+    console.log(strings);
+    console.log(strings.raw);
+}
+
+showraw`Hello\nWorld`; 
+*/
+
+
+//arrow function
+
+/*
+var foo = (x, y) => x + y;
+
+var x = 1;
+var y = 2;
+
+console.log(foo(x, y)); 
+*/
+
+/* 
+var foo = () => 12; 
+var foo = x => x * 2; 
+var foo = (x, y) => {
+    var z = x * 2 + y;
+    y++;
+    x += 3;
+    return (x + y + z) / 2;
+}  
+console.log(foo(2, 1)); 
+*/
+
+/*
+var a  = [1, 2, 3, 5, 7];
+
+a = a.map(b => b * 5);
+
+console.log(a);
+*/
+
+//for..in
+
+/*
+var arr = ["a", "b", "c", "d"];
+
+for (var index in arr) {
+    console.log(arr[index]);
+}
+
+for (var idx in arr) {
+    console.log(idx);
+}
+*/
+
+//for..of
+
+/*
+var arr = ["Mike", "Bob", "Alice"],
+key = Object.keys(arr);
+
+for (var value of arr) {
+    console.log(value);
+}
+
+for (var val = 0, i = 0; i < key.length; i++) {
+    val = arr[key[i]];
+    console.log(val);
+}
+
+for (var chr of "Hello World!") {
+    console.log(chr);
+}
+
+var obj = {};
+
+for (obj.a of arr) {
+    console.log(obj.a);
+}
+*/
+
+//accessing object-properties
+
+/*
+var obj = { 
+    "name": "Alice", 
+    "surname": "Smith",
+}
+
+console.log(obj["name"]);
+*/
+
+
+//regex
+
+/* 
+//unicode flag - u
+console.log(/^. here/.test("𝄞 here")); //false as 𝄞 is not one character by BMP
+
+console.log(/^. here/u.test("𝄞 here"));
+*/
+
+//sticky flag - y
+
+var re1 = /foo/,
+    str = "ab_foo_cd";
+
+console.log(re1.lastIndex);
+
+console.log(re1.test(str));
+
+
+
+
