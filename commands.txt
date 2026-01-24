@@ -1,0 +1,25 @@
+//Important commands
+
+copying in vim  - ggVG -> "+y;
+screenshot -> command + shift + 3; command + shift + 4;
+screen settings -> command shift 5 -> choose save to clipboard
+configuring vim -> vim ~/.vimrc
+
+github {
+    git clone "lnk of repo"
+    cd "name of repo"
+    touch "name of files"
+    git add . //vor bolor file-ere repoyi add linen
+    git commit -m "comment"
+    git push
+	nano ~/.git-credentials
+	https://Elen-Sahakyan:YOUR_TOKEN@github.com
+	git config --global credential.helper store
+    vim .gitignore // meje grum enq en file-ere voronq petqa track chlinen
+    rm -rf .git //kape xzelu hamar, f-y vor hat-hat chhastatenq 
+}
+
+push a directory:
+git add 03.10.25
+git commit -m "03.10.25"
+git push origin main
